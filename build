@@ -1,0 +1,21 @@
+#!/bin/bash
+clear
+exec 10<include.txt
+
+buildfiles=""
+buildname="main"
+
+while read -u 10 line; do {
+    buildfiles+=" "
+    buildfiles+=$line
+}; done
+
+echo $buildfiles
+
+killall ~/Documents/deploy/main
+
+g++ -o $buildname $buildfiles -lglfw -ljsoncpp -lGL -lopenal -lm
+mkdir ~/Documents/deploy
+cp $buildname ~/Documents/deploy
+cp -r assets ~/Documents/deploy
+chmod +x ~/Documents/deploy/$buildname

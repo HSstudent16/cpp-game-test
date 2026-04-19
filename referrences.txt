@@ -1,0 +1,22 @@
+GLFW:
+www.glfw.org
+
+STB:
+github.com/nothings/stb
+
+MiniMP3:
+github.com/lieff/minimp3
+
+OpenAL Soft:
+github.com/kcat/openal-soft
+ffainelli.github.io/openal-example/
+
+OpenGL:
+antongerdelan.net/opengl/index.html
+learnopengl.com/Getting-started/OpenGL
+
+JsonCpp:
+github.com/open-source-parsers/jsoncpp/wiki
+
+ACME:
+I'm working on it, ok :(
