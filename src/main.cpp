@@ -626,6 +626,11 @@ int main () {
     return 1;
   }
 
+  int vMaj = 0;
+  int vMin = 0;
+  int vRev = 0;
+  glfwGetVersion(&vMaj, &vMin, &vRev);
+  std::cout << "Using GLFW version " << vMaj << "." << vMin << "." << vRev << "\n";
   std::cout << "Using platform " << (glfwGetPlatform() == GLFW_PLATFORM_WAYLAND ? "Wayland" : "X11") << "\n";
 
 

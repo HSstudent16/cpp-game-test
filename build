@@ -12,10 +12,10 @@ while read -u 10 line; do {
 
 echo $buildfiles
 
-killall ~/Documents/deploy/main
+killall ./$buildname
 
 g++ -o $buildname $buildfiles -lglfw -ljsoncpp -lGL -lopenal -lm
-mkdir ~/Documents/deploy
-cp $buildname ~/Documents/deploy
-cp -r assets ~/Documents/deploy
-chmod +x ~/Documents/deploy/$buildname
+# mkdir ~/Documents/deploy
+# cp $buildname ~/Documents/deploy
+# cp -r assets ~/Documents/deploy
+chmod +x ./$buildname
